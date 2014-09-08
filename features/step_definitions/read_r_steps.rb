@@ -2,7 +2,7 @@
 @spreadsheet = 'rafferty.xlsx'
 Given(/^the parent enters data into a form$/) do
   #Create a new entry object that stores values
-  @entry = Read_r::Entry.new(name: 'Emma', recorder: 'qrprat77@gmail.com', monmins: 10, favebook: 'Fantastic Mr Fox', fiction: True)
+  @entry = Read_r::Entry.new(name: 'Emma', recorder: 'qrprat77@gmail.com', monmins: 10, favebook: 'Fantastic Mr Fox', fiction: true)
 end
 
 When(/^the form is saved$/) do
