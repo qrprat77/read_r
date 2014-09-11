@@ -12,6 +12,12 @@ module Read_r
 		end
 		
 		def save(filename)
+			# saves to a file
+			
+		end
+		
+		def current 
+			# returns the last saved attributes as a string
 			
 		end
 		
