@@ -12,7 +12,7 @@ module Read_r
 		end
 		
 		def save(filename)
-			# saves to a file
+			[name, recorder, favbook, fiction, minreadmon, minreadtues, minreadweds, minreadthurs, minreadoth]
 			
 		end
 		
