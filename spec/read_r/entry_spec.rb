@@ -20,12 +20,15 @@ module Read_r
 		it "has a method called :save" do
 			expect(@entry).to respond_to(:save)
 		end		
-		
-		it "saves to an xlsx file that is passed to save" do
-			@entry.save(@xlsxfile)
-			expect(@xlsxfile.last).to eq(@entry.current)
-		end
-		
+		describe "entry :save method" do
+			it "uses the marshall def method to store the attributes in an array" do
+				expect(@entry.serial).to be_(Array)
+			end
+			
+			it "makes the last entry in the xlsx file the same as the current entry file" do
+				expect(@xlsxfile.last).to eq(@entry.current)
+			end
+		end # save method descriptor.
 		it "has at least one record of the number of minutes read" do
 			days_with_mins = []
 			["mon", "tues", "weds", "thurs", "oth"].each do |day| 

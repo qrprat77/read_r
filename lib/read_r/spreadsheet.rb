@@ -9,5 +9,11 @@ module Read_r
 			@rdr_list = options[:rdr_list]
 			
 		end
-	end
+		
+		def last
+			#returns the last row of the spreadsheet.
+			
+		end
+		
+	end # Spreadsheet class
 end
