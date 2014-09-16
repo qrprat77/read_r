@@ -12,14 +12,19 @@ module Read_r
 		end
 		
 		def save(filename)
-			[name, recorder, favbook, fiction, minreadmon, minreadtues, minreadweds, minreadthurs, minreadoth]
+			serial.each do |sheet_entry|
+			#write each cell to the same row of the spreadsheet
+			end
 			
 		end
 		
 		def current 
-			# returns the last saved attributes as a string
+			serial.join(" ")
 			
 		end
 		
+		def serial 
+			[name, recorder, '"'+favbook+'"', fiction, minreadmon, minreadtues, minreadweds, minreadthurs, minreadoth]
+		end
 	end # Entry class
 end #read_r module
