@@ -1,4 +1,2 @@
-Read_r is a program designed to log and track the reading list of kids.
-It presents a static web form
-The form enters a row onto a spreadsheet
-The teacher can view the spreadsheet.
+Read_r is a library designed to log and track the reading list of kids.
+It can be implemented from the command line or as a gem in a ruby on rails application (one day at least)

@@ -3,6 +3,8 @@
 # provide a framework for further development
 module Read_r
 	class Spreadsheet 
+		require 'rubyXL'
+		
 		attr_accessor :rdr_list
 		
 		def initialize(options = {}) 
