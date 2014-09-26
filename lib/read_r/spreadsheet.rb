@@ -22,8 +22,8 @@ module Read_r
 		end
 		
 		def last
-			last_row = self.last
-			last_row.join
+			last_row = @spreadsheet.last 
+			last_row.join(" ") #last row of the spreadsheet turned into a string.
 			
 		end
 		

@@ -42,14 +42,14 @@ module Read_r
 				expect(days_with_mins.size).to be >(0)
 			end
 		end
-		
-		it "has a method called :current" do
-			expect(@entry).to respond_to(:current)
-		end
-		it "the :current method displays the last values of entry saved for the current user" do
-		  pending("Need to figure out if I need to know the last entry saved, or if this is redundant data.")
-		end
-		
+		describe ":current method" do
+			it "has a method called :current" do
+				expect(@entry).to respond_to(:current)
+			end
+			it "the :current method displays the last values of entry saved for the current user" do
+				expect(@entry.current).to eq(@entry.serial.join(" "))
+			end
+		end # describe current
 	end # Describe Entry
 	
 end #read_r module
