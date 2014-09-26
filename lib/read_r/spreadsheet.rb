@@ -8,7 +8,7 @@ module Read_r
 		
 		def initialize(options = {}) 
 			@rdr_list = options[:rdr_list]
-			/* @spreadsheet = RubyXL::Parser.parse(filepath to @rdr_list)
+=begin			/* @spreadsheet = RubyXL::Parser.parse(filepath to @rdr_list)
 			Blah, need help with this. Where does the file go?
 			How do I know it's where the file goes?
 			How do I even test that? Is that an implementation issue?
@@ -18,7 +18,7 @@ module Read_r
 			that I can definately say that opening a sheet should only 
 			occur if the sheet exists. So error raised if we create this 
 			object*/
-			
+=end			
 		end
 		
 		def last
