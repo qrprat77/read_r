@@ -31,7 +31,7 @@ module Read_r
 		end
 		
 		def check_for_spreadsheet(sheet)
-			false unless 
+			#false unless true
 		end
 	end # Spreadsheet class
 end
