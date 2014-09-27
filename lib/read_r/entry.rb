@@ -12,8 +12,13 @@ module Read_r
 		end
 		
 		def save(filename)
-			serial.each do |sheet_entry|
+			item = 0
+			#New Spreadsheet open filename object
+			reading_entry = serial
+			reading_entry.count.times do |sheet_entry|
 			#write each cell to the same row of the spreadsheet
+				
+				item +=1
 			end
 			
 		end

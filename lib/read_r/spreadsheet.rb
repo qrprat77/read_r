@@ -6,7 +6,7 @@ module Read_r
 		
 		
 		attr_accessor :rdr_list
-		PATHNAME
+		PATHNAME = ""
 		
 		def initialize(options = {}) 
 			@rdr_list = options[:rdr_list]
