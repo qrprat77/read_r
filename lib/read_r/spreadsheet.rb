@@ -6,12 +6,15 @@ module Read_r
 		
 		
 		attr_accessor :rdr_list
-		PATHNAME = ""
+		PATHNAME = "app/doc/"
 		
 		def initialize(options = {}) 
 			@rdr_list = options[:rdr_list]
+			@file_path = PATHNAME+@rdr_list
 			check_for_spreadsheet(@rdr_list)
-			#@spreadsheet = RubyXL::Parser.parse(filepath to @rdr_list)
+			
+			@workbook = RubyXL::Parser.parse(@file_path)
+			@worksheet = @workbook[0]
 			#Blah, need help with this. Where does the file go?
 			#How do I know it's where the file goes?
 			#How do I even test that? Is that an implementation issue?
@@ -31,7 +34,7 @@ module Read_r
 		end
 		
 		def check_for_spreadsheet(sheet)
-			#false unless true
+			false #unless @sheet the spreadsheet is in the directory
 		end
 	end # Spreadsheet class
 end
