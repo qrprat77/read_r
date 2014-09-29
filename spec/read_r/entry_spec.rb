@@ -5,12 +5,16 @@ module Read_r
    
 	describe "Entry" do
 		before :all do
-			@entry = Read_r::Entry.new(name: 'Emma', recorder: 'qrprat77@gmail.com', minreadmon: 10, favbook: 'Fantastic Mr Fox', fiction: true)
-			@xlsxfile = Read_r::Spreadsheet.new(rdr_list: 'raffertyclass.xlsx')
+			@entry = Read_r::Entry.new(name: 'Emma', group: 'rafferty.xlsx', recorder: 'qrprat77@gmail.com', minreadmon: 10, favbook: 'Fantastic Mr Fox', fiction: true)
+	#		@xlsxfile = Read_r::Spreadsheet.new(rdr_list: 'raffertyclass.xlsx')
 		end
 			
 		it "has a name" do
 			expect(@entry.name).not_to eq(nil)
+		end
+		
+		it "has a group that functions as a record of the class" do 
+			expect(@entry.group).not_to eq(nil)
 		end
 		
 		it "has a book saved as a favbook" do
