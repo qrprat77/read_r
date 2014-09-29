@@ -11,6 +11,10 @@ module Read_r
 			expect(@sheet.check_for_spreadsheet(@sheet.rdr_list)).to be_true
 		end
 		
+		it "throws and error when a spreadsheet doesn't exist" do 
+			pending #expect a non-existant sheet to throw an error
+		end
+		
 		describe "Last" do
 				it "has a method called :last" do
 					expect(@sheet).to respond_to(:last)
