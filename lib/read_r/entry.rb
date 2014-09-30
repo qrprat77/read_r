@@ -37,7 +37,7 @@ module Read_r
 		end
 		
 		def look_up_sheet(classname)
-		
+		Read_r::Spreadsheet.new(classname)
 		end
 		
 	end # Entry class
